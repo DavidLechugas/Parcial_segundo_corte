@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vireon - Inicio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link href="img/logo_vieron.jpeg" rel="icon">
+  </head>
+  <body>
+    <!-- inicio de barra de navegacion -->
+    <div class="container-fliud" style="width: 100%">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: #173936">
+          <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcan">
+            <img
+              src="img/logo_vieron.jpeg"
+              alt=""
+              style="width: 40px; height: auto"
+            />
+          </a>
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- inicio -->
+              <li class="nav-item">
+                <a class="nav-link" href="item_1.html" style="color: #ffffff;">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: #ffffff;"
+                >
+                  Nosotros
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="historia.html">Historia</a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#myModal_video"
+                      >Observa nuestro trabajo</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#myModal_pdf"
+                      >Más Información</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- fin de barra de navegacion -->
+
+    <!-- Carousel -->
+
+    <div class="container-fluid" style="width: 100%; height: 80%; margin: auto">
+      <div
+        id="demo"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        style="width: 100%; height: 80%; margin: auto"
+      >
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="4"
+          ></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a
+              href="https://colombia.inaturalist.org/taxa/56019-Agapanthus-africanus"
+              target="_blank"
+            >
+              <img
+                src="img/img_1.jpg"
+                alt="lirio_africano"
+                class="d-block w-100"
+              />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a
+              href="https://www.academiadelperfume.com/la-lavanda-y-sus-curiosidades/"
+              target="_blank"
+            >
+              <img src="img/img_2.jpg" alt="lavanda" class="d-block w-100" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a
+              href="https://www.jal.co.jp/es/es/guide-to-japan/experiences/cherry-blossom/what-do-cherry-blossoms-represent/index.html"
+              target="_blank"
+            >
+              <img
+                src="img/img_3.png"
+                alt="flor de cereso"
+                class="d-block w-100"
+              />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a
+              href="https://www.gob.mx/snics/articulos/dalia-simbolo-de-la-floricultura-nacional"
+              target="_blank"
+            >
+              <img src="img/img4.jpg" alt="dalia negra" class="d-block w-100" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a
+              href="https://www.interflora.es/blog/colores-de-la-margarita/"
+              target="_blank"
+            >
+              <img src="img/img_5.jpg" alt="margaritas" class="d-block w-100" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- fin carousel ------------------------------------------------------------------->
+
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+      "
+    >
+      <h2 style="text-align: center">
+        En Vireon, lideramos la transición hacia un transporte pesado sin
+        emisiones en los países nórdicos, desarrollando y operando estaciones de
+        hidrógeno. Con visión sostenible, construimos infraestructura clave,
+        colaboramos estratégicamente y avanzamos hacia un futuro más limpio y
+        eficiente.
+      </h2>
+    </div>
+
+    <!-- inicio de offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcan"
+      aria-labelledby="offcanvasExampleLabel"
+      style="color: #ffffff; background-color: #173936"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          Conoce sobre nosotros
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- inicio de la card mision -->
+        <div class="card">
+          <div class="card-header">
+            <a
+              class="collapsed btn"
+              data-bs-toggle="collapse"
+              href="#collapseone"
+            >
+              Misión
+            </a>
+          </div>
+          <div id="collapseone" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Impulsar la transformación digital de nuestros clientes en
+              Latinoamérica, proporcionando soluciones tecnológicas innovadoras
+              y servicios de consultoría de alta calidad que optimicen sus
+              operaciones, mejoren su competitividad y generen valor sostenible.
+            </div>
+          </div>
+        </div>
+        <!-- fin de la card -->
+        <!-- inicio de la card vision -->
+        <div class="card">
+          <div class="card-header">
+            <a
+              class="collapsed btn"
+              data-bs-toggle="collapse"
+              href="#collapseTwo"
+            >
+              Visión
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Ser reconocidos como un socio estratégico líder en la
+              transformación digital de las empresas en Latinoamérica,
+              distinguiéndonos por nuestra capacidad de innovación, nuestro
+              conocimiento del mercado regional y nuestro compromiso con el
+              éxito de nuestros clientes. Es importante tener en cuenta que
+              estas son interpretaciones basadas en la información disponible y
+              podrían no ser las declaraciones oficiales de la empresa. Para
+              obtener la misión y visión exactas, lo ideal sería consultar
+              directamente la página web de Vieron o sus comunicaciones
+              oficiales.
+            </div>
+          </div>
+        </div>
+        <!-- fin de la card -->
+      </div>
+    </div>
+    <!-- fin de offcanvas -->
+
+    <!-- modal video -->
+    <div class="container">
+      <div class="modal" id="myModal_video" style="color: black">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Flores</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div
+              class="modal-body"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <video
+                src="video/video.mp4"
+                controls
+                style="max-width: 100%; height: auto"
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin del modal video -->
+
+    <!-- modal pdf -->
+    <div class="container">
+      <div class="modal" id="myModal_pdf" style="color: black">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Documento de Guia</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div
+              class="modal-body"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <iframe
+                src="doc/archivo1.pdf"
+                width="100%"
+                height="500px"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin del modal pdf -->
+
+    <footer
+      style="
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #f8f9fa;
+        text-align: center;
+        padding: 10px;
+      "
+    >
+      <p>&copy; Página creada por David Sanchez</p>
+    </footer>
+    <h1>area item 1</h1>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
